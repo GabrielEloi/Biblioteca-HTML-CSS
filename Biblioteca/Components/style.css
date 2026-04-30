@@ -1,0 +1,415 @@
+:root{
+    --corprimaria: #000524;
+    --corsecundaria: #101f78;
+    --corterciaria: #020f59;
+    --corquarta:#101f78;
+    --coroptional:  rgb(24, 39, 55);
+    --cortexto:#555;
+}
+
+
+*{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+
+
+/*Footer CSS ------------------------*/
+.footer{
+    display: flex;
+    flex-direction:column;
+    background-color: rgb(15, 25, 36);
+    color: white;
+}
+.empty{
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.content-footer{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+  
+    border-radius: 10px;
+}
+
+.content-footer a{
+    text-decoration: none;
+    color: white;
+    padding: 10px;
+}
+
+
+
+
+
+
+/*Header CSS ------------*/
+
+.header{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--corprimaria);
+    height: 60px;
+    box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.418);
+}
+
+.header .round{
+    display: flex;
+    justify-content: space-between;
+    background-color: aliceblue;
+    width: 90vw;
+    border-radius: 40px ;
+    padding: 10px;
+    color: black;
+}
+.header .round .icon{
+    align-self: flex-start;
+    margin-right: 5px;
+    margin-left: 10px;
+}
+.search{
+    height: 15px;
+    width: 169px;
+}
+.search input{
+    padding: 4px;
+    border-radius: 10px;
+    width: 300px;
+    border: none;
+    box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.349);
+
+}
+.search input::placeholder{
+    color: #888;
+    text-align: center;
+    font-style: italic;
+}
+.links{
+    margin-top:2px;
+}
+.link{
+    text-decoration: none;
+    margin-left: 18px;
+    margin-right: 10px;
+    color: var(--corprimaria);
+    transition: .5s;
+    padding: 8px;
+    border-radius: 20px;
+    font-weight: 500;
+}
+
+.link:hover{
+    background-color: var(--corprimaria);
+    color: white;
+    box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.678);
+}
+
+
+
+
+
+/*Form Login Flutuante CSS ---------------------------------------*/
+.floating{
+    background-color: aliceblue;
+    height: 400px;
+    min-width: 300px;
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    border-radius: 10px;
+    box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.41);
+}
+.floating h1{
+    text-align: center;
+}
+.floating form{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    margin: 10px;
+    padding: 20px;
+    background-color: rgba(100, 148, 237, 0.473);
+    height: 100%;
+    border-radius: 5px;
+    box-shadow: 0px 0px 2px black;
+}
+
+.user{
+    margin-top:10px;
+    margin-bottom: 20px;
+    
+}
+.pass{
+    margin-top:10px;
+    margin-bottom: 20px;
+}
+.pass label{
+    margin-left: 12px;
+}
+.floating-form label{
+    font-size: 15pt;
+    font-weight: 600;
+}
+.floating-form input{
+    border-radius: 4px;
+    border: none;
+    padding: 8px;
+    box-shadow: 0x 0px 3px rgba(0, 0, 0, 0.623);
+    width: 300px;
+}
+.floating-form input:hover{
+    box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.985);
+}
+
+.enter{
+    margin: 10px;
+    padding: 10px;
+    width: 140px;
+    box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.329);
+    font-weight: bolder;
+    background-color: rgba(0, 0, 0, 0.418);
+    color: white;
+    cursor: pointer;
+}
+.enter:hover{
+    background-color: rgba(0, 0, 0, 0.767);
+    box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.685);
+}
+
+
+
+
+
+/*Sidebar CSS -----------------------------------------------------------*/
+.main-sidebar{
+    display: flex;
+    background-color: aliceblue;
+
+}
+
+.sidebar{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex   ;
+    background-color: rgb(24, 39, 55);
+    height: 100vh;
+    width: 17vw;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.356)
+}
+
+.sidebar span{
+    margin: 15px;
+    color: white;
+}
+
+.div-sidebar{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0px;
+}
+
+.material-symbols-outlined {
+    font-size: 10px;
+}
+
+.div-sidebar a{
+    color: white;
+    text-decoration: none;
+    width: 100%;
+    padding: 0px;
+    border: none;
+    margin: 5px 10px;
+    transition: 0.6s;
+    box-sizing: border-box;
+    font-weight: 600;
+    
+}
+
+.div-sidebar a:hover{
+    background-color: rgb(15, 25, 36);
+}
+
+.footer-sidebar{
+    margin-top: 10px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;    
+}
+
+.footer-sidebar a{
+    font-size: 10pt;
+    text-decoration: none;
+    color: white;
+    margin: 10px;
+    transition: 0.4s;
+}
+
+.footer-sidebar a:hover{
+    color: rgb(172, 18, 18);
+}
+
+
+/*Botões CSS --------------------------------- */
+.button-filled{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    padding: 20px;
+    border-radius:10px ;
+    border: none;
+    background-color:var(--corprimaria);
+    color: white;
+    font-weight: bolder;
+    box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.397) ;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.button-filled:hover{
+    background-color: rgb(38, 63, 88);
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.397) ;
+}
+.button-filled:active{
+    background-color: rgb(54, 89, 126);
+    box-shadow: none;
+}
+
+.button-empty{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    padding: 20px;
+    border-radius:10px ;
+    border: 2px solid var(--corprimaria);
+    background-color:white;
+    color:  var(--corprimaria);
+    font-weight: bolder;
+    box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.397) ;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.button-empty:hover{
+    background-color: rgb(24, 39, 55);
+    color: white;
+    border:2px solid rgb(44, 73, 104)
+}
+
+.button-empty:active{
+    background-color: rgb(54, 89, 126);
+    box-shadow: none;
+}
+
+.button-borderchange{
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding: 20px;
+    border-radius:10px ;
+    border: 2px solid rgb(95, 95, 95);
+    background-color:white;
+    color: rgb(95, 95, 95);
+    font-weight: bolder;
+    box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.397) ;
+    cursor: pointer;
+    transition: .2s;
+}
+.button-borderchange:hover{
+    border: 2px solid var(--corprimaria);    color:  var(--corprimaria);
+}
+
+.button-borderchange:active{
+    box-shadow: none;
+    border: 2px solid rgb(9, 78, 78);
+    color:  rgb(9, 83, 83);
+}
+
+
+
+/*Card CSS -----------------------------------*/
+.card {
+  border: 2px solid var(--corprimaria);
+  padding: 16px;
+  border-radius: 8px;
+  background: white;
+}
+
+.card__title {
+  font-size: 18px;
+  margin-bottom: 8px;
+  color: var(--corprimaria);
+}
+
+.card__content {
+  font-size: 14px;
+  color: #555;
+}
+
+
+
+/*Modal CSS ------------------------------*/
+
+.modal{
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.425);
+}
+
+.modal-title h1{
+    text-align: center;
+    color: var(--corprimaria);
+}
+.modal-title a{
+    text-decoration: none;
+    color: var(--corprimaria);
+}
+
+.modal-content{
+    display: flex;
+    flex-direction: column;
+    text-align: justify;
+}
+
+.modal-content button{
+    align-self: center;
+    margin: 20px;
+    width: 300px;
+}
+
+/* Tabela CSS - ------------------------------------------*/
+
+.table-title h1{
+    color: var(--corprimaria);
+}
+.table table{
+    width: 400px;
+    text-align: left;
+    color: #555;
+    
+}
+
+.table td, th{
+    padding: 8px;
+}
+
+.table table, tr{
+    border-collapse: collapse;
+    border: 1px solid var(--cortexto);
+}
+
+.table th{
+    background-color: #000524;
+    color: white;
+    padding: 10px;
+}
+
+.table tr:nth-child(even){
+    background-color: #55555542;
+}
+
