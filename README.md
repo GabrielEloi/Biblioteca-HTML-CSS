@@ -1,12 +1,42 @@
-# Biblioteca-HTML-CSS
+#  Biblioteca HTML + CSS
 
-## Header:
+Uma coleção de componentes reutilizáveis para construção de interfaces web.
 
-Como utilizar:
-1-Faça o link do CSS (arquivo: style.css disponibilizado na pasta) com o HTML;
-2-Faça o link da CSS-API do google(Para fontes e icons): 
-"<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />"
-3-Coloque a seguinte estrutura HTML:
+---
+
+# Componentes
+
+* Header (Cabeçalho)
+* Footer (Rodapé)
+* Sidebar (Menu lateral)
+* Login Flutuante
+* Botões
+* Card
+* Modal
+* Tabela
+
+---
+
+# 🔷 Header (Cabeçalho)
+
+## 📖 Descrição
+
+Componente de navegação superior com ícone, busca e links.
+
+---
+
+## ⚙️ Como utilizar
+
+1. Faça o link do CSS (`style.css`)
+2. Adicione a biblioteca de ícones:
+
+```html
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+```
+
+3. Utilize a estrutura:
+
+```html
 <header class="header">
     <div class="round">
         <span class="icon material-symbols-outlined">face_2</span>
@@ -20,15 +50,30 @@ Como utilizar:
         </div>
     </div>
 </header>
+```
 
+---
 
-## Footer:
+# Footer (Rodapé)
 
-Como utilizar:
-1-Faça o link do CSS (arquivo: style.css disponibilizado na pasta) com o HTML;
-2-Faça o link da CSS-API do google(Para fontes e icons): 
-"<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />"
-3-Coloque a seguinte estrutura HTML:
+## 📖 Descrição
+
+Rodapé com ícones, links e informações de copyright.
+
+---
+
+## ⚙️ Como utilizar
+
+1. Faça o link do CSS (`style.css`)
+2. Adicione a biblioteca de ícones:
+
+```html
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+```
+
+3. Utilize a estrutura:
+
+```html
 <footer class="footer">
     <div class="empty">
         <hr>
@@ -42,17 +87,32 @@ Como utilizar:
         </div>
     </div>
 </footer>
-4-É necessário que o body esteja em 100vh, ou com página cheia.
+```
 
+4. O `body` deve ocupar toda a altura da tela (`100vh`)
 
-## Sidebar
+---
 
-Como utilizar:
-1-Faça o link do CSS (arquivo: style.css disponibilizado na pasta) com o HTML;
-2-Faça o link da CSS-API do google(Para fontes e icons): 
-"<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />"
-3-Coloque a seguinte estrutura HTML:
+# Sidebar (Menu Lateral)
 
+## 📖 Descrição
+
+Menu de navegação vertical com links e ações auxiliares.
+
+---
+
+## ⚙️ Como utilizar
+
+1. Faça o link do CSS (`style.css`)
+2. Adicione a biblioteca de ícones:
+
+```html
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+```
+
+3. Utilize a estrutura:
+
+```html
 <main class="main-sidebar">
     <section class="sidebar">
         <span class="material-symbols-outlined">face_2  </span>
@@ -69,17 +129,32 @@ Como utilizar:
         </div>
     </section>
 </main>
+```
 
-## Login Flutuante:
+---
 
-Como utilizar:
-1-Faça o link do CSS (arquivo: style.css disponibilizado na pasta) com o HTML;
-2-Faça o link da CSS-API do google(Para fontes e icons): 
-"<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />"
-3-Coloque a seguinte estrutura HTML:
+# Login Flutuante
 
+## 📖 Descrição
+
+Formulário de autenticação centralizado/flutuante.
+
+---
+
+## ⚙️ Como utilizar
+
+1. Faça o link do CSS (`style.css`)
+2. Adicione a biblioteca de ícones:
+
+```html
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+```
+
+3. Utilize a estrutura:
+
+```html
 <section class="floating">
-            <h1>Tela de login</h1>
+    <h1>Tela de login</h1>
     <form action="" class="floating-form">
         <div class="user">
             <label for="usuario">Usuario:</label>
@@ -92,56 +167,112 @@ Como utilizar:
         <input type="submit" value="Entrar" class="enter">
     </form>
 </section>
+```
 
-## Botões
+---
 
-Como utilizar:
-1-Faça o link do CSS (arquivo: style.css disponibilizado na pasta) com o HTML;
-2-Coloque a seguinte estrutura HTML:
+# Botões 
 
-2.1- Botão Preenchido:
+## 📖 Descrição
+
+Elementos de ação com diferentes estilos visuais.
+
+---
+
+## ⚙️ Como utilizar
+
+1. Faça o link do CSS (`style.css`)
+
+---
+
+### 🎨 Variações
+
+#### Botão preenchido
+
+```html
 <button class="button-filled">Filled Button</button>
-2.2- Botão vazio:
+```
+
+#### Botão vazio
+
+```html
 <button class="button-empty">Empty Button</button>
-2.3 - Botão Borda Estilizada:
+```
+
+#### Botão com borda animada
+
+```html
 <button class="button-borderchange">Border Change Button</button>
+```
 
-## Card
+---
 
-Como utilizar:
-1-Faça o link do CSS (arquivo: style.css disponibilizado na pasta) com o HTML;
-2-Coloque a seguinte estrutura HTML:
+# 🧱 Card
 
+## 📖 Descrição
+
+Container para exibir conteúdo estruturado.
+
+---
+
+## ⚙️ Como utilizar
+
+1. Faça o link do CSS (`style.css`)
+
+```html
 <div class="card">
     <h2 class="card__titulo">Título</h2>
     <p class="card__conteudo">Conteúdo do card</p>
 </div>
+```
 
-## modal 
+---
 
-Como utilizar:
-1-Faça o link do CSS (arquivo: style.css disponibilizado na pasta) com o HTML;
-2-Faça o link da CSS-API do google(Para fontes e icons): 
-"<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />"
-3-Coloque a seguinte estrutura HTML:
+# 🪟 Modal
 
+## 📖 Descrição
+
+Janela sobreposta para exibir informações ou ações.
+
+---
+
+## ⚙️ Como utilizar
+
+1. Faça o link do CSS (`style.css`)
+2. Adicione a biblioteca de ícones:
+
+```html
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+```
+
+```html
 <div class="modal">
     <div class="modal-title">
         <a href=""><span class="material-symbols-outlined">close</span></a>
         <h1>Modal Example</h1>
     </div>
     <div class="modal-content">
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Id, dignissimos nesciunt. Enim repellat nostrum dolores corrupti. In sint, consequatur eius incidunt hic iusto, dolores modi eos animi, nulla cupiditate ullam.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
         <button class="button-filled">Ok!</button>
     </div>
 </div>
+```
 
-## Tabela
+---
 
-Como utilizar:
-1-Faça o link do CSS (arquivo: style.css disponibilizado na pasta) com o HTML;
-2-Coloque a seguinte estrutura HTML:
+# 📊 Tabela 
 
+## 📖 Descrição
+
+Estrutura para exibição de dados tabulares.
+
+---
+
+## ⚙️ Como utilizar
+
+1. Faça o link do CSS (`style.css`)
+
+```html
 <div class="table-title">
     <h1>Tabela bonita</h1>
     <div class="table">
@@ -169,3 +300,35 @@ Como utilizar:
         </table>
     </div>
 </div>
+```
+
+
+# 📊 Grid Layout 
+
+## 📖 Descrição
+
+Estrutura para exibição de texto e imagens.
+
+---
+
+## ⚙️ Como utilizar
+1. Faça o link do CSS (`style.css`)
+```html
+<section class="flex-grid">
+    <div class="main-grid">
+        <div class="img-grid">
+            <h1>Example</h1>
+            <img src="img.png" alt="img">
+        </div>
+        <div class="description-grid">
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laudantium ut quis numquam neque inventore reiciendis incidunt sapiente voluptas itaque eum! Nam minus modi aliquid vero at, molestiae libero illo! Dignissimos.
+            </p>
+        </div>
+    </div>
+    <div class="side-grid">
+        <h1>Title</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempora vitae facere perspiciatis voluptatum, assumenda aliquid nam qui minima quidem nisi similique iste fugiat corrupti quam quas dolorum provident, cumque repellendus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut molestias quaerat dicta rerum debitis similique repudiandae distinctio nostrum, earum esse veniam est eos officiis minus dignissimos repellat aliquam blanditiis. Quam. Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias vitae dolor nihil accusamus. Voluptatem id neque inventore vitae, asperiores dolore distinctio similique est alias exercitationem consectetur eum, facere, itaque voluptas.
+        </p>
+    </div>
+</section>
+```

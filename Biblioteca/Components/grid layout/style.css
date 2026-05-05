@@ -1,0 +1,45 @@
+:root{
+    --corprimaria: #000524;
+    --corsecundaria: #101f78;
+    --corterciaria: #020f59;
+    --corquarta:#101f78;
+    --coroptional:  rgb(24, 39, 55);
+    --cortexto:#555;
+}
+
+
+* {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
+                 Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.flex-grid{
+    display: flex;
+    flex-direction: row-reverse;
+    border: 1px solid #000524;
+}
+
+.main-grid{
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto auto;
+    justify-items: center;
+}
+
+.main-grid h1{
+    color: #000524;
+}
+.main-grid p{
+    color: var(--cortexto)
+}
+.side-grid{
+    text-align: justify;
+    margin: 10px;
+    max-width: 500px;
+}
+.side-grid h1{
+    color:var(--corprimaria)
+}
+.side-grid p{
+    color: var(--cortexto)
+}

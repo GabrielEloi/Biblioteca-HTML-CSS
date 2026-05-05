@@ -413,3 +413,36 @@
     background-color: #55555542;
 }
 
+/* Grid Layout ------------------------------------------*/
+
+
+.flex-grid{
+    display: flex;
+    flex-direction: row-reverse;
+    border: 1px solid #000524;
+}
+
+.main-grid{
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto auto;
+    justify-items: center;
+}
+
+.main-grid h1{
+    color: #000524;
+}
+.main-grid p{
+    color: var(--cortexto)
+}
+.side-grid{
+    text-align: justify;
+    margin: 10px;
+    max-width: 500px;
+}
+.side-grid h1{
+    color:var(--corprimaria)
+}
+.side-grid p{
+    color: var(--cortexto)
+}
