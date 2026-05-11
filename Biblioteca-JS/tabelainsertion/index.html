@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+<input type="text" name="info1" id= "input1">
+<input type="text" name="info2" id= "input2">
+<input type="text" name="info3" id= "input3">
+<button onclick="inserirTabela()"> Adicionar tabela </button>
+
+<div class="table-title">
+        <h1>Tabela bonita</h1>
+        <div class="table">
+            <table id="tabela">
+                <thead>
+                    <tr>
+                        <th>Coluna 1</th>
+                        <th>Coluna 2</th>
+                        <th>Coluna 3</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Ex 1 Coluna 1</td>
+                        <td>Ex 1 Coluna 2</td>
+                        <td>Ex 1 Coluna 3</td>
+                    </tr>
+                    <tr>
+                        <td>Ex 2 Coluna 1</td>
+                        <td>Ex 2 Coluna 2</td>
+                        <td>Ex 2 Coluna 3</td>
+                    </tr>
+                    <tr>
+                        <td>Ex 3 Coluna 1</td>
+                        <td>Ex 3 Coluna 2</td>
+                        <td>Ex 3 Coluna 3</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+        
+  
+</body>
+  <script>
+        let corpo = document.getElementById("tabela").getElementsByTagName("tbody")[0];
+        let info1 = document.getElementById("input1");
+        let info2 = document.getElementById("input2");
+        let info3 = document.getElementById("input3");
+
+        function inserirTabela(){
+            let novalinha = corpo.insertRow();
+            let exemplo1 = novalinha.insertCell(0);
+            let exemplo2 = novalinha.insertCell(1);
+            let exemplo3 = novalinha.insertCell(2);
+        
+            exemplo1.textContent = info1.value;
+            exemplo2.textContent = info2.value;
+            exemplo3.textContent = info3.value;
+        }
+    </script>
+</html>

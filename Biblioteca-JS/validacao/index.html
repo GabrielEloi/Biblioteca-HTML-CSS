@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <label for="name">Digite seu usuario: </label>
+    <input id="name" type="text" min="8">
+    <label for="senha">Digite sua senha: </label>
+    <input id="senha" type="password">
+    <button onclick="senhaForteValidacao()"> Enviar </button>
+    <p id="mensagem"></p>
+</body>
+<script>
+    let senha = document.getElementById('senha');
+    let msg = document.getElementById('mensagem');
+    function senhaForteValidacao(){
+
+        let verificaMaiusculas = /[A-Z]/.test(senha.value);
+        let verificaMinusculas = /[a-z]/.test(senha.value);
+        let verificaNumeros = /[0-9]/.test(senha.value);
+    
+        if(!verificaMaiusculas ){
+            msg.innerHTML = 'Sua senha é fraca, ela deve conter letras maiúsculas';
+        }
+        else if(!verificaMinusculas){
+            msg.innerHTML = 'Sua senha é fraca ela deve conter letras minusculas';
+        }
+        else if(!verificaNumeros){
+            msg.innerHTML = 'Sua senha é fraca ela deve conter números';
+        }else{
+            msg.innerHTML = 'Sua senha é forte';
+        }
+        
+    }
+</script>
+</html>

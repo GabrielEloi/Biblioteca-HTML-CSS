@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <button class="button-modal" onclick="openModal()">
+        Abrir Modal
+    </button>
+    <div id="modal-box">
+        <div id="modal" class="modal">
+            <div class="modal-title">
+                <span class="material-symbols-outlined" onclick="closeModal()">close</span>
+                <h1>Modal Example</h1>
+            </div>
+            <div class="modal-content">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Id, dignissimos nesciunt. Enim repellat nostrum dolores corrupti. In sint, consequatur eius incidunt hic iusto, dolores modi eos animi, nulla cupiditate ullam.</p>
+                
+                <button class="button-filled" onclick="closeModal()">Ok!</button>
+            </div>
+        </div>
+    </div>
+</body>
+<script>
+    let modal = document.getElementById("modal");
+    let button = doucument.getElementById("button-modal");
+    function openModal(){
+        modal.classList.add('open')
+        button.classList.add('close');
+
+    }
+    function closeModal(){
+        modal.classList.remove('open');
+        button.classList.remove("close");    
+    }
+</script>
+</html>

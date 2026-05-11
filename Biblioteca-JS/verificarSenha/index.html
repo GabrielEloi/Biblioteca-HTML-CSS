@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <div id="formulario">
+
+        <label for="name">Digite seu usuario: </label>
+        <input id="name" type="text" min="8"><br>
+        <label for="senha">Digite sua senha: </label>
+        <input id="senha" type="password"><br>
+        <label for="confirmsenha">Confirme sua senha: </label>
+        <input id="confirmsenha" type="password"><br>
+        <button onclick="validarSenhas()"> Enviar </button>
+    </div>
+
+    <p id="mensagem"></p>
+</body>
+    <script>
+        function validarSenhas(){
+            let senha = document.getElementById("senha");
+            let confirmSenha = document.getElementById("confirmsenha");
+            let form = document.getElementById("mensagem");
+
+            if(senha.value != confirmSenha.value){
+                form.innerHTML = "sua senha não está igual";
+                form.style.color = 'red';
+            }else{
+                form.innerHTML = 'Senhas iguais cadastradas com sucesso';
+            }
+        }
+    </script>
+</html>
