@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+<script>
+    function inputCreate(textLabel, name,placeholder, classe , type){
+        let input = document.createElement("input");
+        let labelInput = document.createElement("label");
+        labelInput.name = name;
+        labelInput.textContent = textLabel;
+        input.name = name;
+        input.type = type;
+        input.placeholder = placeholder;
+        input.classList.add(classe);
+
+        document.body.appendChild(input);
+        document.body.appendChild(labelInput);
+    
+    }
+</script>
+</html>
