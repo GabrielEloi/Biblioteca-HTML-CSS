@@ -9,7 +9,12 @@
     
 </body>
 <script>
-    function inputCreate(textLabel, name,placeholder, classe , type){
+    function inputCreate(textLabel, name,placeholder, classe , type, required){
+           if(typeof required != Boolean){
+            throw new error(
+                "O parâmetro 'required' deve ser boolean"
+            )
+        }
         let input = document.createElement("input");
         let labelInput = document.createElement("label");
         labelInput.name = name;
@@ -18,6 +23,7 @@
         input.type = type;
         input.placeholder = placeholder;
         input.classList.add(classe);
+        input.required = required;
 
         document.body.appendChild(input);
         document.body.appendChild(labelInput);
